@@ -62,6 +62,9 @@ public class FXQuery {
         } else if (node instanceof TextArea) {
             TextArea textArea = (TextArea) node;
             return textArea.getText();
+        } else if (node instanceof ComboBoxBase) {
+            ComboBoxBase base = (ComboBoxBase) node;
+            return base.getValue();
         }
         return null;
     }
@@ -80,18 +83,18 @@ public class FXQuery {
         }
     }
 
-    public ObservableList<JSONObject> list(){
-       Node node = this.pane.lookup(id);
-       TableView<JSONObject> tableview = (TableView<JSONObject>) node;
-       return tableview.getItems();
-    }
-    
-    public void list(ObservableList<JSONObject> list){
+    public ObservableList<JSONObject> list() {
         Node node = this.pane.lookup(id);
-       TableView<JSONObject> tableview = (TableView<JSONObject>) node;
-       tableview.setItems(list);
+        TableView<JSONObject> tableview = (TableView<JSONObject>) node;
+        return tableview.getItems();
     }
-    
+
+    public void list(ObservableList<JSONObject> list) {
+        Node node = this.pane.lookup(id);
+        TableView<JSONObject> tableview = (TableView<JSONObject>) node;
+        tableview.setItems(list);
+    }
+
     public JSONArray items() {
         Node node = this.pane.lookup(id);
         JSONArray array = new JSONArray();
@@ -133,6 +136,12 @@ public class FXQuery {
         Node node = this.pane.lookup(id);
         TableView<JSONObject> tableview = (TableView<JSONObject>) node;
         return tableview.getSelectionModel().getSelectedIndex();
+    }
+
+    public boolean contains(JSONObject jsonObj) {
+        Node node = this.pane.lookup(id);
+        TableView<JSONObject> tableview = (TableView<JSONObject>) node;
+        return tableview.getItems().indexOf(jsonObj) != -1;
     }
 
     public void disable() {
