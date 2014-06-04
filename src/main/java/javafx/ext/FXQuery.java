@@ -13,6 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.TextInputControl;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
+import javafx.scene.text.Text;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -65,6 +66,9 @@ public class FXQuery {
         } else if (node instanceof ComboBoxBase) {
             ComboBoxBase base = (ComboBoxBase) node;
             return base.getValue();
+        } else if (node instanceof Text) {
+            Text text = (Text) node;
+            return text.getText();
         }
         return null;
     }
@@ -80,6 +84,9 @@ public class FXQuery {
         } else if (node instanceof TextArea) {
             TextArea textArea = (TextArea) node;
             textArea.setText((String) value);
+        } else if (node instanceof Text) {
+            Text text = (Text) node;
+            text.setText((String) value);
         }
     }
 
