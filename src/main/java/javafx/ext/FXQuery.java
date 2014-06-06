@@ -76,10 +76,13 @@ public class FXQuery {
             textField.setText((String) value);
         } else if (node instanceof DatePicker) {
             DatePicker datePicker = (DatePicker) node;
-            datePicker.setValue((LocalDate) value);
+            datePicker.setValue(LocalDate.parse((String) value));
         } else if (node instanceof TextArea) {
             TextArea textArea = (TextArea) node;
             textArea.setText((String) value);
+        } else if (node instanceof ComboBoxBase) {
+            ComboBoxBase base = (ComboBoxBase) node;
+            base.setValue((String) value);
         }
     }
 
