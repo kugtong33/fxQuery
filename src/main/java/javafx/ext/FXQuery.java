@@ -77,19 +77,19 @@ public class FXQuery {
         Node node = this.pane.lookup(id);
         if (node instanceof TextField) {
             TextField textField = (TextField) node;
-            textField.setText((String) value);
+            textField.setText(String.valueOf(value));
         } else if (node instanceof DatePicker) {
             DatePicker datePicker = (DatePicker) node;
-            datePicker.setValue(LocalDate.parse((String) value));
+            datePicker.setValue(LocalDate.parse(String.valueOf(value)));
         } else if (node instanceof TextArea) {
             TextArea textArea = (TextArea) node;
-            textArea.setText((String) value);
+            textArea.setText(String.valueOf(value));
         } else if (node instanceof ComboBoxBase) {
             ComboBoxBase base = (ComboBoxBase) node;
-            base.setValue((String) value);
+            base.setValue(String.valueOf(value));
         } else if (node instanceof Text) {
             Text text = (Text) node;
-            text.setText((String) value);
+            text.setText(String.valueOf(value));
         }
     }
 
