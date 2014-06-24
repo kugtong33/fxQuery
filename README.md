@@ -1,6 +1,6 @@
 fxQuery
 =======
-[![Build Status](https://travis-ci.org/Innovatus/fxQuery.svg?branch=development)](https://travis-ci.org/Innovatus/fxQuery)
+[![Build Status](https://travis-ci.org/Innovatus/fxQuery.svg?branch=development-github)](https://travis-ci.org/Innovatus/fxQuery)
 
 jQuery inspired JavaFX library for UI-Controller development
 
@@ -40,5 +40,5 @@ elements same as DOM elements.
 
 Any node which is inside the given container(in this case an AnchorPane) 
 can be automatically used by getting the id and put it in the selector 
-function, which is the ```java $()``` method;
+function, which is the ```$("#element-id")``` method;
 
