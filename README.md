@@ -1,6 +1,5 @@
-fxQuery
+fxQuery [![Gitter chat](https://badges.gitter.im/Innovatus.png)](https://gitter.im/Innovatus) [![Build Status](https://travis-ci.org/Innovatus/fxQuery.svg?branch=development)](https://travis-ci.org/Innovatus/fxQuery)
 =======
-[![Build Status](https://travis-ci.org/Innovatus/fxQuery.svg?branch=development)](https://travis-ci.org/Innovatus/fxQuery)
 
 jQuery inspired JavaFX library for UI-Controller development
 
