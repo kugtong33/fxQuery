@@ -1,4 +1,4 @@
-fxQuery [![Gitter chat](https://badges.gitter.im/Lintad.png)](https://gitter.im/Lintad) [![Build Status](https://travis-ci.org/Lintad/fxQuery.svg?branch=development)](https://travis-ci.org/Lintad/fxQuery)[(https://codeship.com/projects/YOUR_PROJECT_UUID/status?branch=development)]
+fxQuery [![Gitter chat](https://badges.gitter.im/Lintad.png)](https://gitter.im/Lintad) [![Build Status](https://travis-ci.org/Lintad/fxQuery.svg?branch=development)](https://travis-ci.org/Lintad/fxQuery)[ ![Codeship Status for Lintad/fxQuery](https://codeship.com/projects/4f2b3d20-a3a5-0132-e233-12052818d981/status?branch=development)](https://codeship.com/projects/66079)
 =======
 
 
